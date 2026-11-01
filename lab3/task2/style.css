@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: darkgreen;
+    color: white;
+    text-align: left;
+    padding: 25px 40px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+nav{
+    background-color: white;
+    text-align: left;
+    padding: 15px 40px;
+    border-bottom: 3px solid darkgreen;
+}
+
+nav a{
+    color: darkgreen;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.admission{
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.intro{
+    background-color: white;
+    padding: 15px;
+    border: 1px solid darkgreen;
+}
+
+.notice{
+    position: relative;
+    left: 15px;
+}
+
+.programs{
+    margin-top: 30px;
+}
+
+.program{
+    display: inline-block;
+    width: 300px;
+    height: 220px;
+    padding: 25px;
+    margin: 10px;
+    border: 2px solid darkgreen;
+    background-color: white;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+}
+
+.program h3{
+    color: darkgreen;
+    margin-top: 25px;
+}
+
+.badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 6px 10px;
+}
+
+.last-text{
+    margin-top: 25px;
+    position: relative;
+    left: 10px;
+}
+
+.apply{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px 20px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .program{
+        display: block;
+        width: 500px;
+        margin: 20px auto;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .admission{
+        padding: 20px;
+    }
+
+    .program{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 18px 0;
+    }
+
+    .apply{
+        right: 15px;
+        bottom: 15px;
+    }
+
+}

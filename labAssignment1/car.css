@@ -1,0 +1,208 @@
+
+body {
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    background-color: orange;
+    border: 3px solid gray;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+.info {
+    color: orange;
+    font-size: 16px;
+}
+
+.score {
+    background-color: gray;
+    color: white
+    ;
+    border: 2px solid orange;
+    padding: 12px;
+    width: 330px;
+    margin: 15px auto;
+}
+
+.road {
+    width: 340px;
+    height: 500px;
+    background-color: gray;
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;
+    border-left: 8px solid orange;
+    border-right: 8px solid orange;
+}
+
+.line {
+    width: 5px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    animation: roadmove 2s infinite linear;
+}
+
+.line1 {
+    left: 25%;
+    top: -80px;
+}
+
+.line2 {
+    left: 25%;
+    top: 150px;
+    animation-delay: 0.5s;
+}
+
+.line3 {
+    left: 75%;
+    top: 50px;
+    animation-delay: 1s;
+}
+
+.line4 {
+    left: 75%;
+    top: 300px;
+    animation-delay: 1.5s;
+}
+
+@keyframes roadmove {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(600px);
+    }
+}
+
+.mycar {
+    position: absolute;
+    bottom: 15px;
+    left: 42%;
+}
+
+.mycar img {
+    width: 50px;
+    height: 90px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.car {
+    position: absolute;
+    top: -100px;
+    animation: carmove 3.5s infinite linear;
+}
+
+.car img {
+    width: 50px;
+    height: 90px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.car1 {
+    left: 10%;
+}
+
+.car2 {
+    left: 65%;
+    animation-delay: 1.2s;
+}
+
+.car3 {
+    left: 40%;
+    animation-delay: 2.4s;
+}
+
+@keyframes carmove {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 520px;
+    }
+}
+
+.start {
+    background-color: orange;
+    color: white;
+    border: 5px solid gray;
+    padding: 12px 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    color: orange;
+}
+
+@media (max-width: 600px) {
+    .road {
+        width: 270px;
+        height: 450px;
+    }
+
+    .score {
+        width: 250px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    /* Mobile */
+@media (max-width: 600px) {
+    .road {
+        width: 250px;
+        height: 430px;
+    }
+
+    .score {
+        width: 240px;
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .car img, .mycar img {
+        width: 40px;
+        height: 75px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .road {
+        width: 300px;
+        height: 480px;
+    }
+
+    .score {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .road {
+        width: 340px;
+        height: 500px;
+    }
+
+    .score {
+        width: 330px;
+    }
+}
+}
